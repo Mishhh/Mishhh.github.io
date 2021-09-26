@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop-view](https://github.com/Mishhh/Order-summary/blob/main/assests/Screenshots/desktop-view.PNG?raw=true)
 
 ### Links
 

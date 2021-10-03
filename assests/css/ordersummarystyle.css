@@ -4,19 +4,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   text-decoration: none;
-
 }
 
-html{
-    background-color: #f5f7ff;
+html {
+  background-color: #f5f7ff;
 }
 
 body {
   background-image: url(../images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
 }
 
 .container {
@@ -24,35 +23,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 110vh;
-  max-width: 1440px;
+  min-height: 100vh;
   margin: 0 auto;
 }
 
-.card {
-  width: 500px;
+.order-summary-card {
+  margin-top: 1rem;
+  max-width: 400px;
+  width: 100%;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 2px 5px 10px #0f010185;
 }
-@media(max-width: 425px) {
-  .card {
-    width: 400px;
-  }
-}
-@media(max-width: 375px) {
-  .card {
-    width: 350px;
-  }
-}
 
-.img-illustration {
+.card-header {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
-.box-text {
+.card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,11 +49,12 @@ body {
 
 .card-title {
   font-weight: 900;
-  font-size: 2rem;
-  margin: 2rem;
+  font-size: 1.7rem;
+  margin: 1.5rem;
 }
 
 .card-paragraph {
+  flex-wrap: wrap;
   width: 25rem;
   font-size: 1.2rem;
   text-align: center;
@@ -72,104 +62,123 @@ body {
   color: #7280a7;
 }
 
-.box-plan {
-  margin: 1.5rem;
+.annual-plan {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  justify-content: stretch;
   border-radius: 20px;
   background-color: #f5f7ff;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-.box-value {
+.annual-plan-box {
   display: flex;
-  align-items: center;
-  margin-left: 1rem;
-  font-size: 1.2rem;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-left: 0.5rem;
 }
 
-.box-price {
+.annual-plan-box-content {
   margin-left: 1rem;
   line-height: 1.5rem;
 }
 
-img{
-    width: 100%;
-    max-width: 60em;
+.music-icon {
+  width: 100%;
+  max-width: 60rem;
 }
 
-.price-paragraph {
-  width: 125px;
+.annual-plan-price {
+  width: 130px;
   font-weight: bold;
 }
 
-.btn-change {
-    color: #4b3fd1;
-    font-size: 1.2rem;
-    font-weight: bold;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 8rem;
+.annual-plan-btn-change {
+  color: #4b3fd1;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 4.5rem;
+}
+
+.btn-change:hover {
+  color: slateblue;
+}
+
+.order-summary-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-proceed {
+  width: 80%;
+  height: 3.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  margin: 1rem;
+  color: #fff;
+  background-color: #4b3fd1;
+  box-shadow: black 1px 1px;
+}
+.btn-proceed:hover {
+  background-color: slateblue;
+}
+
+.btn-cancel {
+  width: 80%;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+  color: #727374;
+}
+
+.btn-cancel:hover {
+  color: #000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+}
+
+footer a:visited {
+  color: #3829e0;
+}
+
+/*Screensize adjustments*/
+
+@media (max-width: 425px) {
+  .order-summary-card {
+    max-width: 400px;
   }
-  .btn-change:hover {
-    color: slateblue;
+
+  .btn-change {
+    margin-left: 5rem;
   }
-  @media(max-width: 425px) {
-    .btn-change {
-      margin-left: 5rem;
-    }
+}
+
+@media (max-width: 375px) {
+  .order-summary-card {
+    max-width: 350px;
   }
-  @media(max-width: 375px) {
-    .btn-change {
-      margin-left: 3rem;
-    }
+
+  .btn-change {
+    margin-left: 3rem;
   }
-  
-  .box-btn {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .btn-proceed {
-    width: 80%;
-    height: 3.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 1rem;
-    margin: 1rem;
-    color: #fff;
-    background-color: #4b3fd1;
-    box-shadow: black 1px 1px;
-  }
-  .btn-proceed:hover {
-    background-color: slateblue;
-  }
-  
-  .btn-cancel {
-    width: 80%;
-    height: 3rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 1rem;
-    background-color: transparent;
-    border: none;
-    margin-bottom: 2rem;
-    color: #727374;
-  }
-  .btn-cancel:hover {
-    color: #000;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    margin-top: 7rem;
-  }
-  
-  footer a:visited {
-    color: #3829e0;
-  }
+}
+
+

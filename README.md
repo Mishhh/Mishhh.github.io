@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://mishhh.github.io/Order-summary/)
-- Live Site URL: [Add live site URL here](https://mishhh.github.io/Order-summary/)
+- Solution URL: [Solution URL ](https://mishhh.github.io/Order-summary/)
+- Live Site URL: [Live site URL ](https://mishhh.github.io/Order-summary/)
 
 ## My process
 

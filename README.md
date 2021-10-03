@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop-view](https://github.com/Mishhh/Order-summary/blob/main/assests/Screenshots/desktop-view.PNG?raw=true)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://mishhh.github.io/Order-summary/)
+- Live Site URL: [Add live site URL here](https://mishhh.github.io/Order-summary/)
 
 ## My process
 
@@ -42,4 +42,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Mishhh](https://www.frontendmentor.io/profile/Mishhh)
